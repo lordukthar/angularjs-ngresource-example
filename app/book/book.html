@@ -1,0 +1,12 @@
+<div class="col-md-4 col-md-offset-4">
+  <ul>
+    <li ng-repeat="book in books">
+      <h3>{{book.title}}</h3>
+      <a ng-href="#!/edit" ng-click="editBook(book.id)">Update book</a>
+      <a ng-href="#" ng-click="deleteBook(book.id)">Delete book</a>
+    </li>
+  </ul>
+
+  <a ng-href="#!/add" >Add book</a>
+
+</div>
